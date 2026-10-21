@@ -1,0 +1,15 @@
+/* p{
+    color: red;
+    background-color: yellow;
+} */
+#mainspan{
+    color: blue;
+}
+.mainclass{
+    color:green;
+    background-color:pink;
+}
+span , p{
+    color:orange;
+    background-color:lightblue;
+}
