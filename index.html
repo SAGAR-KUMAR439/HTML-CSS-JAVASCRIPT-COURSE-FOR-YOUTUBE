@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=ubantu&display=swap">
     <script src="script.js"></script>
     <title>HTML,CSS & JAVASCRIPT</title>
     <!-- <style>
@@ -12,6 +13,106 @@
             background-color: seagreen !important;
         }
     </style> -->
+    <style>
+        p{
+            font-family: 'Ubuntu', 'Franklin Gothic Medium' , 'Arial Narrow' , Arial, sans-serif;
+            font-size: 33px;  /* 1/96th of an inch */
+            line-height: 1.3em;
+        
+        }
+        span{
+            font-weight: bold;
+            font-style: italic;
+        }
+         #FIRSTPARA{
+            color: red;  /*COLOR BY NAME*/
+            background-color: #0dfa19; 
+        }
+        #SECONDPARA{
+            color: rgb(240, 11, 137); /*COLOR BY RGB VALUE*/
+            background-color: rgb(1, 255, 43)
+        }
+        #THIRDPARA{
+            color: #fa0101; 
+            background-color: #0dfa19; /*COLOR BY HEX VALUE*/
+        }
+        #firstpara {
+            background-color: yellow;
+            height:100px;
+            width: 455px;
+            border: 4px solid green;
+            /* border-width: 4px;
+            border-color: red;
+            border-style: solid;  */
+            border-radius: 10px;
+        }
+        #secondpara{
+            background-color: rgb(0, 255, 85);
+            height:100px;
+            width: 455px;
+            border-top: 2px solid violet;
+            border-right: 2px solid rgb(226, 18, 226);
+            border-bottom: 2px solid rgb(238, 134, 15);
+            border-left: 2px solid rgb(87, 62, 233);
+            border-top-left-radius: 4px;
+            border-top-right-radius: 14px;
+            border-bottom-left-radius: 8px;
+            border-bottom-right-radius: 24px;
+            }
+        #thirdpara{
+            height: 500px;
+            width: 455px;
+            background-image: url('https://www.libpng.org/pub/png/img_png/pengbrew_160x160.png');
+            border: 2px solid red;
+            background-repeat: no-repeat;  /* repeat-x and repeat-y will make it repeat on x and y axix */
+            /* background-position: 192px 34px; */
+            background-position: center center;
+            /* background-position: center top; */
+            /* background-position: top top; */
+            /* background-position: top center; */
+            /* background-position: bottom right; */
+        }
+         /* Universal selector */
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body{
+            background-color: #e6cbf8;
+        }
+
+        .container{
+            background-color: rgb(231,230,241);
+            border: 3px solid rgb(64,6,119);
+
+            /* We can set margin/padding for top , bottom , left and right like this */
+            /* padding-top: 9px;
+            padding-bottom: 9px;
+            padding-left: 34px;
+            padding-right: 79px;  */
+
+            /* margin-top: 3px;
+            margin-bottom: 5px;
+            margin-left: 34px;
+            margin-right: 5px; */
+
+            /* margin = top right bottom left;
+            padding = top right bottom left; */
+
+            /* padding: 23px 56px 6px 78px;
+            margin: 23px 56px 6px 78px; */
+
+            /* padding: y(top/bottom) x(left/right);
+            margin: y(top/bottom) x(left/right); */
+            padding: 34px 19px;
+            margin: 14px 19px;
+            border-radius: 23px;
+            width: 533px;
+            box-sizing: border-box;
+        }    
+    </style>
 </head>
 <body>
     <!-- Heading tag -->
@@ -216,5 +317,44 @@
         <h1>WWF's Panda symbol</h1>
         <p>The Panda has become the symbol of WWF. The well-known panda logo of WWF originated from a panda named Chi Chi that was transferred from the Beijing Zoo to the London Zoo in the same year of the establishment of WWF.</p>
     </section>
+    <!-- CSS FONTS -->
+    <h1>CSS Fonts</h1>
+    <p>Let's play with <span>fonts</span>. it is very exiting</p>
+      
+    <!-- COLOR IN CSS -->
+    <h1>THIS IS FIRST BOX</h1>
+    <p id="FIRSTPARA">THIS IS FIRST PARA BOX</p>
+
+    <h1>THIS IS SECOND BOX</h1>
+    <P id="SECONDPARA">THIS IS SECOND PARA BOX</P>
+
+    <H1>THIS IS THIRD BOX</H1>
+    <P id="THIRDPARA">THIS IS THIRD PARA B0X</P>
+
+    <!-- Height , width , borders and background -->
+
+    <h2>This is heading</h2>
+    <p id="firstpara">This is my first paragraph</p>
+
+    <h2>This is heading</h2>
+    <p id="secondpara">This is my second paragraph</p>
+
+    <h2>This is heading</h2>
+    <p id="thirdpara">This is my third paragraph</p>
+
+    <!-- Box Model -->
+    
+    <div class="container">
+        <h2>This is first heading</h2>
+        <p id="first">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt, quod veritatis magnam voluptates alias neque, ea, sint voluptatem quibusdam a aut illum facere eligendi atque. Sunt, tempora. Voluptatibus, omnis eaque.
+    </div>
+       <div class="container">
+        <h2>This is second heading</h2>
+        <p id="second">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt, quod veritatis magnam voluptates alias neque, ea, sint voluptatem quibusdam a aut illum facere eligendi atque. Sunt, tempora. Voluptatibus, omnis eaque.
+    </div>
+    <div class="container">
+        <h2>This is third heading</h2>
+        <p id="third">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt, quod veritatis magnam voluptates alias neque, ea, sint voluptatem quibusdam a aut illum facere eligendi atque. Sunt, tempora. Voluptatibus, omnis eaque.
+    </div>
 </body>
 </html>
